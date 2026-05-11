@@ -1,0 +1,84 @@
+{
+  "name": "wayfern",
+  "version": "0.1.0",
+  "description": "Playwright wrapper that transparently humanizes mouse movement, typing, and scrolling, plus Wayfern fingerprint CDP helpers.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./typing": {
+      "types": "./types/typer.d.ts",
+      "default": "./src/typer.js"
+    },
+    "./cursor": {
+      "types": "./types/cursor.d.ts",
+      "default": "./src/cursor.js"
+    },
+    "./scroll": {
+      "types": "./types/scroll.d.ts",
+      "default": "./src/scroll.js"
+    },
+    "./wayfern": {
+      "types": "./types/wayfern.d.ts",
+      "default": "./src/wayfern.js"
+    },
+    "./cdp": {
+      "types": "./types/cdp.d.ts",
+      "default": "./src/cdp.js"
+    },
+    "./hooks": {
+      "types": "./types/hooks.d.ts",
+      "default": "./src/hooks.js"
+    }
+  },
+  "files": [
+    "src/",
+    "types/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "node --test 'test/*.test.js'",
+    "verify": "node verify/run.mjs",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "playwright",
+    "humanize",
+    "anti-detect",
+    "wayfern",
+    "fingerprint",
+    "bot-detection",
+    "automation"
+  ],
+  "author": "Internet Technology Services LLC",
+  "license": "MIT",
+  "homepage": "https://github.com/zhom/wayfern-humanizer#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhom/wayfern-humanizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zhom/wayfern-humanizer/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "playwright": ">=1.20.0"
+  },
+  "peerDependenciesMeta": {
+    "playwright": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "playwright": "^1.59.1",
+    "typescript": "^5.9.3"
+  }
+}
