@@ -1,6 +1,6 @@
 {
   "name": "wayfern",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Playwright wrapper that transparently humanizes mouse movement, typing, and scrolling, plus Wayfern fingerprint CDP helpers.",
   "type": "module",
   "main": "./src/index.js",
@@ -58,7 +58,7 @@
   ],
   "author": "Internet Technology Services LLC",
   "license": "MIT",
-  "homepage": "https://github.com/zhom/wayfern-humanizer#readme",
+  "homepage": "https://wayfern.com",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zhom/wayfern-humanizer.git"

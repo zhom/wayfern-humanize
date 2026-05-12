@@ -1,6 +1,6 @@
 # wayfern
 
-Playwright wrapper that transparently humanizes mouse, typing, and scroll, plus thin wrappers around the Wayfern fingerprint CDP commands.
+Playwright wrapper that transparently humanizes mouse, typing, and scroll, plus thin wrappers around the [Wayfern](https://wayfern.com) anti-detect Chromium engine's fingerprint CDP commands. Used in production by [Donut Browser](https://donutbrowser.com).
 
 ## Install
 
